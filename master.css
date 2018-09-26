@@ -1,6 +1,6 @@
 /*IMPORT DE FONTES EXTERNAS*/
 
-@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 
 
 html, body {
@@ -17,12 +17,12 @@ body {
 
 h1 {
      position: absolute;
-     top: 52%;
+     top: 45%;
      left: 50%;
      transform: translate(-50%, -50%);
      color: #fff;
-     font-size: 75px;
-     font-family: 'Cedarville Cursive', cursive;
+     font-size: 79px;
+     font-family: 'Lobster', cursive;
      font-weight: lighter;
 }
 
@@ -84,4 +84,46 @@ a {
      text-decoration: none;
      color: #fff;
      font-family: Poppins;
+}
+
+
+.middle{
+     position: absolute;
+     top: 90%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+
+.mouse{
+     width: 50px;
+     height: 90px;
+     border: 4px solid #000;
+     border-radius: 60px;
+     background-color: #000;
+     opacity: .4;
+}
+
+.mouse::before{
+     content: "";
+     width: 15px;
+     height: 15px;
+     position: absolute;
+     top: 20px;
+     background: #fff;
+     left: 50%;
+     transform: translateX(-50%);
+     border-radius: 50%;
+     opacity: 1;
+     animation: mouse 2s infinite;
+}
+
+@keyframes mouse {
+     from{
+          opacity: 1;
+          top: 10px;
+     }
+     to {
+          opacity: 0;
+          top: 83px;
+     }
 }
